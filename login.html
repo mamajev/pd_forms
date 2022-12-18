@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pieslēgties</title>
+  </head>
+  <body>
+    <div class="data-container">
+      <div class="pic-container">
+        <div class="greeting">
+          <h1 id="hello">Esi svecināts<br />ĶLUS</h1>
+          <hr
+            style="
+              color: white;
+              width: 50%;
+              margin-top: 3rem;
+              margin-bottom: 3rem;
+            "
+          />
+          <p style="font-size: 1.2rem">Tavas laboratorijas uzskaites sistēma</p>
+        </div>
+
+        <img src="./lab.svg" width="400px" height="400px" />
+      </div>
+      <div class="info-container">
+        <a href="index.html" id="back-link"
+          ><strong style="margin-right: 1rem">←</strong>Atpakaļ uz sākumlapu</a
+        >
+
+        <h1
+          style="
+            font-size: 3rem;
+            word-spacing: 0.5rem;
+            color: rgba(0, 133, 248, 1);
+            margin-top: 3rem;
+          "
+        >
+          Pieslēgties
+        </h1>
+        <p
+          style="
+            color: #303030;
+            line-height: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+          "
+        >
+          Ķīmijas laboratorijas uzskaites sistēmai
+        </p>
+        <div class="login-form">
+          <div class="data-input">
+            <label for="login">Lietotājvārds</label>
+            <input type="text" id="login" placeholder="Ievādīt lietotājvārdu" />
+            <label for="password">Parole</label>
+            <input type="password" id="password" placeholder="Ievādīt paroli" />
+          </div>
+
+          <button onclick="location.href='table.html'" id="login-btn">
+            Pieslēgties
+          </button>
+        </div>
+        <hr style="color: #30303033; margin-right: 5rem; margin-top: 4rem" />
+        <p style="color: #303030; margin-top: 0.5rem">
+          Neesi vēl reģistrēts?
+          <a href="#" style="color: rgba(0, 133, 248, 1); text-decoration: none"
+            >Izveidot profilu</a
+          >
+        </p>
+        <button id="error-btn">Ziņot par kļūdu</button>
+      </div>
+    </div>
+  </body>
+</html>
